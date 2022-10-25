@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 10px 14px 70px rgba(0, 0, 0, 0.03);
+  margin: 10px;
+  margin-left: 21%;
+  border-radius:50px;
+}
+
+#step {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.num {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  background: #E1F9F4;
+  color: #AAAAAA;
+  text-align: center;
+}
+
+.st{
+  width: fit-content;
+  height: 34px;
+  padding: 7px;
+  color: #AAAAAA;
+}
+
+.schange {
+  background: #6AB4F8;
+  border-radius: 50px ;
+}
+
+.schange .st {
+  border-radius: 50px ;
+  color: white;
+}
+
+.schange .num {
+  background: #ffffff;
+  border-radius: 50px ;
+  color: black;
+}
+
+.add-header {
+  text-align: left;
+  margin-left: 21%;
+  color: #7d7d7d;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.fa-eye {
+  color: #DFDFDF;
+  margin-right: 8px;
+}
+
+.fa-pen {
+  color: #DFDFDF;
+  margin-left: 8px;
+}
+
+.fa-images {
+  color: #DFDFDF;
+}
