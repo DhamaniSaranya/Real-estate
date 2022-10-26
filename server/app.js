@@ -23,6 +23,9 @@ async function main() {
   await connectDB();
   app.use(express.json());
   app.use(express.urlencoded({extended:true}));
+  app.get ("/", (req,res) => {
+    res.json("server start")
+  })
   app.use("/", authRoute);
   app.use("/", propRoute);
   app.use("/",searchRoute)

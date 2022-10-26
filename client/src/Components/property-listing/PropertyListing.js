@@ -7,7 +7,7 @@ const Listing = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/addedproperty")
+    fetch("https://realestate-backen.herokuapp.com/addedproperty")
       .then(res => res.json())
       .then((result) => {
         setItems(result);
@@ -21,7 +21,7 @@ const Listing = () => {
     console.log("*")
     let key = e.target.value;
     if (key) {
-      let result = await fetch(`http://localhost:5000/search/${key}`);
+      let result = await fetch(`https://realestate-backen.herokuapp.com/search/${key}`);
       const data = await result.json();
       console.log(data);
       if (data) {

@@ -30,7 +30,7 @@ const SignIn = () => {
       return;
     }
 
-    const res = await fetch("/login", {
+    const res = await fetch("https://realestate-backen.herokuapp.com/login", {
       method: "POST",
       body: JSON.stringify(user),
       headers: {

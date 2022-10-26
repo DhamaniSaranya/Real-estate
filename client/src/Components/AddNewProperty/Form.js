@@ -46,7 +46,7 @@ function Form() {
                 setPage((currPage) => currPage - 1);  
               }}
             >Previous</button>
-
+        
             <button 
               className='next'
               onClick={() => {
@@ -56,7 +56,7 @@ function Form() {
   ////////////////////////////////////////////////////
                   axios({
                     method: "post",
-                    url: "http://localhost:5000/addproperty",
+                    url: "https://realestate-backen.herokuapp.com/addproperty",
                     data: formData
                   })
   //////////////////////////////////////////////////////

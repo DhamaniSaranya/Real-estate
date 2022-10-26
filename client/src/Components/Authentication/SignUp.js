@@ -20,7 +20,7 @@ const SignUp=()=>{
     e.preventDefault();
     const { email, password, confirmPassword } = newUser;
 
-    const res = await fetch("/register",{
+    const res = await fetch("https://realestate-backen.herokuapp.com/register",{
       method:"POST",
       headers:{
         "Content-Type" : "application/json"
